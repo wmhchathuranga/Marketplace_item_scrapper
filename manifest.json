@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Marketplace Scrapper",
+    "version": "1.0",
+    "description": "Do not interact with the page when Extension is handling it.",
+    "icons": {
+        "128": "./icons/android-icon-144x144.png",
+        "48": "./icons/android-icon-48x48.png",
+        "16": "./icons/android-icon-36x36.png"
+    },
+    "action": {
+        "default_icon": "./icons/android-icon-48x48.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://web.facebook.com/marketplace",
+                "https://web.facebook.com/marketplace/*",
+                "https://www.facebook.com/marketplace/*"
+            ],
+            "js": [
+                "scrap.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs"
+    ]
+}

@@ -1,0 +1,19 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    /* border: 1px solid black; */
+}
+
+
+html,
+body {
+    padding: 10px;
+    margin: 0;
+    width: 500px;
+    /* height: 200px; */
+    /* overflow: hidden; */
+    border-color: #15a4fb;
+    background: rgb(255,255,255);
+    background: linear-gradient(126deg, rgba(255,255,255,1) 0%, rgba(22,110,198,1) 0%, rgba(0,148,255,1) 100%); 
+}
+
+.spacer { margin:0; padding:0; height:50px; }
